@@ -1,0 +1,8 @@
+.star-body {
+    background-color: white;
+    align-self: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+}

@@ -1,0 +1,14 @@
+:root {
+    --height: 0px;
+    --width: 0px; 
+}
+
+.system-orbit {
+    height: var(--height);
+    width: var(--width);
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    opacity: 0.2;
+    position: absolute;
+    align-self: center;
+}
