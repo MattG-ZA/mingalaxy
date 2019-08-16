@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mingalaxy/static/css/main.0325f2fc.chunk.css",
+    "main.js": "/mingalaxy/static/js/main.f86c6b72.chunk.js",
+    "main.js.map": "/mingalaxy/static/js/main.f86c6b72.chunk.js.map",
+    "runtime~main.js": "/mingalaxy/static/js/runtime~main.b0771d9d.js",
+    "runtime~main.js.map": "/mingalaxy/static/js/runtime~main.b0771d9d.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/mingalaxy/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/mingalaxy/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/mingalaxy/index.html",
+    "precache-manifest.56d884ae03d8182036e680fd92304e09.js": "/mingalaxy/precache-manifest.56d884ae03d8182036e680fd92304e09.js",
+    "service-worker.js": "/mingalaxy/service-worker.js",
+    "static/css/main.0325f2fc.chunk.css.map": "/mingalaxy/static/css/main.0325f2fc.chunk.css.map"
+  }
+}
