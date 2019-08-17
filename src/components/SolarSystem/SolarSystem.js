@@ -1,7 +1,7 @@
 import React from 'react';
 import './SolarSystem.css';
 import Star from '../Star/Star';
-import Planet from '../Planet/Planet';
+import PlanetSystem from '../PlanetSystem/PlanetSystem';
 import Orbit from '../Orbit/Orbit';
 
 class SolarSystem extends React.Component {
@@ -12,12 +12,15 @@ class SolarSystem extends React.Component {
             <span className='system-body'>
                 <Star />
                 {planetObjects.map((planet) => {
-                    const { index, distance, tto } = planet;
-                    return <Planet key={index} planetIndex={index} distance={distance} tto={tto} />;
+                    const { index, distance, tto, moonObjects } = planet;
+                    // Create a complex key to ensure proper re-render
+                    const key = index + distance + tto;
+                    return <PlanetSystem key={key} distance={distance} tto={tto} moonObjects={moonObjects} />;
                 })}
                 {planetObjects.map((planet) => {
                     const { index, distance } = planet;
-                    return <Orbit key={index} distance={distance} />;
+                    const key = index + distance;
+                    return <Orbit key={key} distance={distance} />;
                 })}
             </span>
         );

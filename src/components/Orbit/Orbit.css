@@ -1,8 +1,3 @@
-:root {
-    --height: 0px;
-    --width: 0px; 
-}
-
 .system-orbit {
     height: var(--height);
     width: var(--width);

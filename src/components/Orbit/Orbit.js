@@ -10,10 +10,6 @@ class Orbit extends React.Component {
         orbit.style.setProperty('--width', (distance * 2) + 'px');
     }
 
-    componentDidUpdate() {
-        this.setOrbitStyleProperties();
-    }
-
     componentDidMount() {
         this.setOrbitStyleProperties();
     }
