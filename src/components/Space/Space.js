@@ -2,11 +2,13 @@ import React from 'react';
 import './Space.css';
 import { createSolarSystem } from '../../helpers/SpaceHelper';
 import SolarSystem from '../SolarSystem/SolarSystem';
+import SpaceBackground from './ui/SpaceBackground/SpaceBackground';
+import GenerateButton from './ui/GenerateButton/GenerateButton';
 
 class Space extends React.Component {
     constructor(props) {
         super(props);
-        
+
         this.state = {
             zoom: 1,
             planetObjects: [],
@@ -18,7 +20,7 @@ class Space extends React.Component {
         let zoom = 0;
 
         if (event.deltaY < 0) {
-            zoom = this.state.zoom + (this.state.zoom * 0.1); 
+            zoom = this.state.zoom + (this.state.zoom * 0.1);
         }
         else {
             zoom = this.state.zoom - (this.state.zoom * 0.1);
@@ -28,20 +30,23 @@ class Space extends React.Component {
         this.setState({ zoom });
     };
 
+    updateSolarSystem = () => {
+        this.setState({ planetObjects: createSolarSystem() });
+    }
+
     componentDidMount() {
         const space = this.refs.space;
         space.addEventListener("wheel", this.spaceZoom);
 
-        this.setState({ planetObjects: createSolarSystem() });
+        this.updateSolarSystem();
     }
 
     render() {
         return (
             <span>
-                <div className='generate-button' onClick={() => { this.setState({ planetObjects: createSolarSystem() }) }}>
-                    <span>Generate new system</span>
-                </div>
-                <span ref='space' className="space-background">
+                <SpaceBackground />
+                <GenerateButton updateSolarSystem={this.updateSolarSystem} />
+                <span ref='space' className="space-container">
                     {this.state.planetObjects.length > 0 && <SolarSystem planetObjects={this.state.planetObjects} />}
                 </span>
             </span>

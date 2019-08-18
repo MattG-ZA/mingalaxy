@@ -1,3 +1,12 @@
+@keyframes pulse {
+	from {
+		box-shadow: 0 0 10px 5px #fbe602, 0 0 15px 10px #e70f14, 0 0 20px 15px #fabc14;
+	}
+	to {
+		box-shadow: 0 0 15px 7px #fbe602, 0 0 20px 12px #e70f14, 0 0 25px 19px #fabc14;
+	}
+}
+
 .star-body {
     background-color: white;
     align-self: center;
@@ -5,4 +14,6 @@
     width: 50px;
     border-radius: 50%;
     position: absolute;
+    animation: pulse 7s infinite linear;
+    animation-direction: alternate;
 }
