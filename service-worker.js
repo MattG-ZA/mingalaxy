@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mingalaxy/precache-manifest.85267a05d7701b96b8f49e503b52cc9f.js"
+  "/mingalaxy/precache-manifest.e68e5eb59d94f1d2ce8cd04a93128727.js"
 );
 
 self.addEventListener('message', (event) => {
