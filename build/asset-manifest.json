@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/mingalaxy/static/css/main.fe4ed495.chunk.css",
-    "main.js": "/mingalaxy/static/js/main.cd13e8cf.chunk.js",
-    "main.js.map": "/mingalaxy/static/js/main.cd13e8cf.chunk.js.map",
+    "main.css": "/mingalaxy/static/css/main.ba70bacf.chunk.css",
+    "main.js": "/mingalaxy/static/js/main.cc675c44.chunk.js",
+    "main.js.map": "/mingalaxy/static/js/main.cc675c44.chunk.js.map",
     "runtime~main.js": "/mingalaxy/static/js/runtime~main.b0771d9d.js",
     "runtime~main.js.map": "/mingalaxy/static/js/runtime~main.b0771d9d.js.map",
     "static/js/2.d6a534e5.chunk.js": "/mingalaxy/static/js/2.d6a534e5.chunk.js",
     "static/js/2.d6a534e5.chunk.js.map": "/mingalaxy/static/js/2.d6a534e5.chunk.js.map",
     "index.html": "/mingalaxy/index.html",
-    "precache-manifest.85267a05d7701b96b8f49e503b52cc9f.js": "/mingalaxy/precache-manifest.85267a05d7701b96b8f49e503b52cc9f.js",
+    "precache-manifest.e68e5eb59d94f1d2ce8cd04a93128727.js": "/mingalaxy/precache-manifest.e68e5eb59d94f1d2ce8cd04a93128727.js",
     "service-worker.js": "/mingalaxy/service-worker.js",
-    "static/css/main.fe4ed495.chunk.css.map": "/mingalaxy/static/css/main.fe4ed495.chunk.css.map"
+    "static/css/main.ba70bacf.chunk.css.map": "/mingalaxy/static/css/main.ba70bacf.chunk.css.map",
+    "static/media/SpaceBackground.css": "/mingalaxy/static/media/stars.6494ab5b.png"
   }
 }

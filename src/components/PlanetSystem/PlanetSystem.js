@@ -19,21 +19,29 @@ class PlanetSystem extends React.Component {
     }
 
     render() {
-        const { moonObjects } = this.props;
+        const { planetSize, moonObjects } = this.props;
 
         return (
             <span ref='planetSystem' className='planet-system'>
-                <Planet />
+                <Planet planetSize={planetSize} />
                 {moonObjects.map((moon) => {
-                    const { index, distance, tto } = moon;
+                    const { index, moonSize, distance, tto } = moon;
                     // Create a complex key to ensure proper re-render
-                    const key = index + distance +  tto;
-                    return <Moon key={key} distance={distance} tto={tto} />;
+                    const key = index + distance + tto;
+                    return <Moon
+                        key={key}
+                        moonSize={moonSize}
+                        distance={distance}
+                        tto={tto}
+                    />;
                 })}
                 {moonObjects.map((moon) => {
                     const { index, distance } = moon;
                     const key = index + distance;
-                    return <Orbit key={key} distance={distance} />;
+                    return <Orbit
+                        key={key}
+                        distance={distance}
+                    />;
                 })}
             </span>
         )

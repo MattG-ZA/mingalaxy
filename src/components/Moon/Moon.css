@@ -1,20 +1,18 @@
 @keyframes rotation {
 	from {
 		transform: rotate(0deg)
-		           translate(var(--translate))
-		           rotate(0deg);
+		           translate(var(--translate));
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(var(--translate)) 
-		           rotate(-360deg);
+		           translate(var(--translate));
 	}
 }
 
 .moon-body {
     background-color: lightskyblue;
-    height: 3px;
-    width: 3px;
+    height: var(--moonSize);
+    width: var(--moonSize);
     border-radius: 50%;
     position: absolute;
     animation: rotation var(--tto) infinite linear;

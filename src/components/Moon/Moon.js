@@ -3,9 +3,10 @@ import './Moon.css';
 
 class Moon extends React.Component {
     componentDidMount() {
-        const { distance, tto } = this.props;
+        const { moonSize, distance, tto } = this.props;
         const moon = this.refs.moon;
 
+        moon.style.setProperty('--moonSize', moonSize + 'px');
         moon.style.setProperty('--translate', distance + 'px');
         moon.style.setProperty('--tto', tto + 's');
     }

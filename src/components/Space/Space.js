@@ -11,7 +11,10 @@ class Space extends React.Component {
 
         this.state = {
             zoom: 1,
-            planetObjects: [],
+            solarSystem: {
+                starSize: null,
+                planetObjects: []
+            },
         };
     }
 
@@ -31,7 +34,7 @@ class Space extends React.Component {
     };
 
     updateSolarSystem = () => {
-        this.setState({ planetObjects: createSolarSystem() });
+        this.setState({ solarSystem: createSolarSystem() });
     }
 
     componentDidMount() {
@@ -47,7 +50,7 @@ class Space extends React.Component {
                 <SpaceBackground />
                 <GenerateButton updateSolarSystem={this.updateSolarSystem} />
                 <span ref='space' className="space-container">
-                    {this.state.planetObjects.length > 0 && <SolarSystem planetObjects={this.state.planetObjects} />}
+                    {this.state.solarSystem.planetObjects.length > 0 && <SolarSystem solarSystem={this.state.solarSystem} />}
                 </span>
             </span>
         );
