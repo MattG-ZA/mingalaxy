@@ -12,6 +12,25 @@ class PlanetSystem extends React.Component {
 
         planetSystem.style.setProperty('--translate', distance + 'px');
         planetSystem.style.setProperty('--tto', tto + 's');
+
+        this.calculateRotation();
+    }
+
+    calculateRotation() {
+        const planetSystem = this.refs.planetSystem;
+
+        // Choose a random spawn position and adjust end position accordingly
+        let fromPosition = Math.round(Math.random() * 360);
+        let toPosition = fromPosition + 360;
+
+        // Determine whether rotation will be clockwise or counter clockwise
+        if (Math.round(Math.random()) === 0) {
+            fromPosition = fromPosition * -1;
+            toPosition = toPosition * -1;
+        }
+
+        planetSystem.style.setProperty('--fromPosition', fromPosition + 'deg');
+        planetSystem.style.setProperty('--toPosition', toPosition + 'deg');
     }
 
     componentDidMount() {

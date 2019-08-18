@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61e1acd2c8f53b0e96f111cb09d43fae",
+    "revision": "b4f6b6671a5811eda462192adc574d69",
     "url": "/mingalaxy/index.html"
   },
   {
-    "revision": "d4d4cecec50c3243733f",
-    "url": "/mingalaxy/static/css/main.ba70bacf.chunk.css"
+    "revision": "f5a206d588c0ef4338c4",
+    "url": "/mingalaxy/static/css/main.d8732db3.chunk.css"
   },
   {
     "revision": "9eee67cf782a38d35aeb",
     "url": "/mingalaxy/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "d4d4cecec50c3243733f",
-    "url": "/mingalaxy/static/js/main.cc675c44.chunk.js"
+    "revision": "f5a206d588c0ef4338c4",
+    "url": "/mingalaxy/static/js/main.990b57dd.chunk.js"
   },
   {
     "revision": "ee6c6c529c688a4530e7",
