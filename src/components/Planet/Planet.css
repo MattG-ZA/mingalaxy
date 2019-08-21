@@ -1,7 +1,22 @@
 .planet-body {
-	background-color: red;
-    height: var(--planetSize);
-    width: var(--planetSize);
-    border-radius: 50%;
-    position: absolute;
+  background-color: var(--planetColour);
+  height: var(--planetSize);
+  width: var(--planetSize);
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 6px -2px rgba(255, 189, 3, 0.72), -1px -1px 4px -1px rgba(255, 238, 191, 0.23);
+}
+
+.planet-mask {
+  height: var(--planetSize);
+  width: var(--planetSize);
+  position: absolute;
+  box-shadow: inset -1px -1px 4px #251303, inset 1px 1px 3px -1px rgba(255, 204, 159, 0.6);
+  border-radius: 50%;
+}
+
+.planet-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
