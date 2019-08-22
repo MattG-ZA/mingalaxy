@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "044b5cfd24dcdaf61060f026816f8cb7",
+    "revision": "1c250cffa622eb306422fcf81f1b0546",
     "url": "/mingalaxy/index.html"
   },
   {
-    "revision": "1aedcf899279b0db5d91",
+    "revision": "d7bffc79387c5967f578",
     "url": "/mingalaxy/static/css/main.a94bdfa0.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mingalaxy/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "1aedcf899279b0db5d91",
-    "url": "/mingalaxy/static/js/main.582f79bc.chunk.js"
+    "revision": "d7bffc79387c5967f578",
+    "url": "/mingalaxy/static/js/main.4cf13c81.chunk.js"
   },
   {
     "revision": "ee6c6c529c688a4530e7",
