@@ -1,17 +1,16 @@
 import React from 'react';
 import './Planet.css';
-import { planetColours } from '../../config/constants';
+import { choosePlanetColour } from '../../helpers/PlanetHelper';
 
 class Planet extends React.Component {
     setPlanetStyleProperties() {
-        const { planetSize } = this.props;
+        const { planetSize, distance } = this.props;
         const { planet, planetMask } = this.refs;
 
-        // Get an array of possible planet colours
-        const colours = planetColours();
+        const planetColour = choosePlanetColour(distance);
 
         planet.style.setProperty('--planetSize', planetSize + 'px');
-        planet.style.setProperty('--planetColour', colours[Math.round(Math.random() * 8)]);
+        planet.style.setProperty('--planetColour', planetColour);
         planetMask.style.setProperty('--planetSize', planetSize + 'px');
     }
 
